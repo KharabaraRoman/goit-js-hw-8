@@ -29,14 +29,6 @@ function createGallery(galleryItems) {
 }
 
 ulRef.insertAdjacentHTML('beforeend', galleryCardsSet);
-ulRef.addEventListener('click', selectGalleryElement);
-
-function selectGalleryElement(event) {
-    event.preventDefault();
-    if (event.target.nodeName !== 'IMG') {
-      return;
-    }
-}
 
 let lightbox = new SimpleLightbox('.gallery a', {
     caption: true,
