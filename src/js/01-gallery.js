@@ -3,8 +3,6 @@ import { galleryItems } from './gallery-items';
 import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
 
-console.log(galleryItems);
-
 
 const ulRef = document.querySelector('.gallery')
 const galleryCardsSet = createGallery(galleryItems);
@@ -36,4 +34,4 @@ let lightbox = new SimpleLightbox('.gallery a', {
     captionDelay: 250,
 });
 
-console.log(galleryItems);
+
